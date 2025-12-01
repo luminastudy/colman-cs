@@ -9,31 +9,13 @@
     "parents": []
   },
   {
-    "id": "math-foundation",
-    "title": {
-      "he_text": "יסודות מתמטיקה",
-      "en_text": "Mathematics Foundation"
-    },
-    "prerequisites": [],
-    "parents": ["root"]
-  },
-  {
-    "id": "cs-foundation",
-    "title": {
-      "he_text": "יסודות מדעי המחשב",
-      "en_text": "Computer Science Foundation"
-    },
-    "prerequisites": [],
-    "parents": ["root"]
-  },
-  {
     "id": "linear-algebra-1",
     "title": {
       "he_text": "אלגברה לינארית 1",
       "en_text": "Linear Algebra I"
     },
     "prerequisites": [],
-    "parents": ["math-foundation"]
+    "parents": ["root"]
   },
   {
     "id": "linear-algebra-2",
@@ -42,7 +24,7 @@
       "en_text": "Linear Algebra II"
     },
     "prerequisites": ["linear-algebra-1"],
-    "parents": ["math-foundation"]
+    "parents": ["root"]
   },
   {
     "id": "calculus-1",
@@ -51,7 +33,7 @@
       "en_text": "Calculus I"
     },
     "prerequisites": [],
-    "parents": ["math-foundation"]
+    "parents": ["root"]
   },
   {
     "id": "calculus-2",
@@ -60,7 +42,7 @@
       "en_text": "Calculus II"
     },
     "prerequisites": ["calculus-1"],
-    "parents": ["math-foundation"]
+    "parents": ["root"]
   },
   {
     "id": "discrete-math-1",
@@ -69,7 +51,7 @@
       "en_text": "Discrete Mathematics I"
     },
     "prerequisites": [],
-    "parents": ["math-foundation"]
+    "parents": ["root"]
   },
   {
     "id": "discrete-math-2",
@@ -78,7 +60,7 @@
       "en_text": "Discrete Mathematics II"
     },
     "prerequisites": ["discrete-math-1"],
-    "parents": ["math-foundation"]
+    "parents": ["root"]
   },
   {
     "id": "intro-cs",
@@ -87,7 +69,7 @@
       "en_text": "Introduction to Computer Science"
     },
     "prerequisites": [],
-    "parents": ["cs-foundation"]
+    "parents": ["root"]
   },
   {
     "id": "oop",
@@ -96,7 +78,7 @@
       "en_text": "Object-Oriented Programming"
     },
     "prerequisites": ["intro-cs"],
-    "parents": ["cs-foundation"]
+    "parents": ["root"]
   },
   {
     "id": "data-structures",
@@ -105,15 +87,6 @@
       "en_text": "Data Structures"
     },
     "prerequisites": ["intro-cs", "discrete-math-1"],
-    "parents": ["cs-foundation"]
-  },
-  {
-    "id": "core-courses",
-    "title": {
-      "he_text": "קורסי ליבה",
-      "en_text": "Core Courses"
-    },
-    "prerequisites": [],
     "parents": ["root"]
   },
   {
@@ -123,7 +96,7 @@
       "en_text": "Algorithms"
     },
     "prerequisites": ["data-structures", "discrete-math-2"],
-    "parents": ["core-courses"]
+    "parents": ["root"]
   },
   {
     "id": "computer-architecture",
@@ -132,7 +105,7 @@
       "en_text": "Computer Architecture"
     },
     "prerequisites": ["intro-cs"],
-    "parents": ["core-courses"]
+    "parents": ["root"]
   },
   {
     "id": "operating-systems",
@@ -141,7 +114,7 @@
       "en_text": "Operating Systems"
     },
     "prerequisites": ["computer-architecture", "data-structures"],
-    "parents": ["core-courses"]
+    "parents": ["root"]
   },
   {
     "id": "computer-networks",
@@ -150,7 +123,7 @@
       "en_text": "Computer Networks"
     },
     "prerequisites": ["operating-systems"],
-    "parents": ["core-courses"]
+    "parents": ["root"]
   },
   {
     "id": "databases",
@@ -159,7 +132,7 @@
       "en_text": "Database Systems"
     },
     "prerequisites": ["data-structures"],
-    "parents": ["core-courses"]
+    "parents": ["root"]
   },
   {
     "id": "theory-courses",
@@ -180,31 +153,13 @@
     "parents": ["theory-courses"]
   },
   {
-    "id": "specializations",
-    "title": {
-      "he_text": "התמחויות",
-      "en_text": "Specialization Tracks"
-    },
-    "prerequisites": [],
-    "parents": ["root"]
-  },
-  {
-    "id": "data-science-track",
-    "title": {
-      "he_text": "מסלול מדעי הנתונים",
-      "en_text": "Data Science Track"
-    },
-    "prerequisites": ["algorithms", "linear-algebra-2", "calculus-2"],
-    "parents": ["specializations"]
-  },
-  {
     "id": "ml-data-mining",
     "title": {
       "he_text": "למידת מכונה וכריית מידע",
       "en_text": "Machine Learning and Data Mining"
     },
     "prerequisites": ["linear-algebra-2", "calculus-2", "algorithms"],
-    "parents": ["data-science-track"]
+    "parents": ["root"]
   },
   {
     "id": "data-science-fundamentals",
@@ -213,7 +168,7 @@
       "en_text": "Data Science Fundamentals"
     },
     "prerequisites": ["databases", "ml-data-mining"],
-    "parents": ["data-science-track"]
+    "parents": ["root"]
   },
   {
     "id": "big-data",
@@ -222,16 +177,7 @@
       "en_text": "Big Data"
     },
     "prerequisites": ["data-science-fundamentals"],
-    "parents": ["data-science-track"]
-  },
-  {
-    "id": "cybersecurity-track",
-    "title": {
-      "he_text": "מסלול אבטחת מידע",
-      "en_text": "Cybersecurity Track"
-    },
-    "prerequisites": ["operating-systems", "computer-networks"],
-    "parents": ["specializations"]
+    "parents": ["root"]
   },
   {
     "id": "cybersecurity-basics",
@@ -240,7 +186,7 @@
       "en_text": "Cybersecurity Basics"
     },
     "prerequisites": ["operating-systems", "computer-networks"],
-    "parents": ["cybersecurity-track"]
+    "parents": ["root"]
   },
   {
     "id": "penetration-testing",
@@ -249,16 +195,7 @@
       "en_text": "Penetration Testing"
     },
     "prerequisites": ["cybersecurity-basics"],
-    "parents": ["cybersecurity-track"]
-  },
-  {
-    "id": "deep-learning-track",
-    "title": {
-      "he_text": "מסלול למידה עמוקה",
-      "en_text": "Deep Learning Track"
-    },
-    "prerequisites": ["ml-data-mining"],
-    "parents": ["specializations"]
+    "parents": ["root"]
   },
   {
     "id": "neural-networks",
@@ -267,7 +204,7 @@
       "en_text": "Neural Networks"
     },
     "prerequisites": ["ml-data-mining"],
-    "parents": ["deep-learning-track"]
+    "parents": ["root"]
   },
   {
     "id": "computer-vision",
@@ -276,16 +213,7 @@
       "en_text": "Computer Vision"
     },
     "prerequisites": ["neural-networks"],
-    "parents": ["deep-learning-track"]
-  },
-  {
-    "id": "fullstack-track",
-    "title": {
-      "he_text": "מסלול פיתוח Full Stack",
-      "en_text": "Full Stack Development Track"
-    },
-    "prerequisites": ["oop", "databases"],
-    "parents": ["specializations"]
+    "parents": ["root"]
   },
   {
     "id": "web-development",
@@ -294,7 +222,7 @@
       "en_text": "Web Development"
     },
     "prerequisites": ["oop"],
-    "parents": ["fullstack-track"]
+    "parents": ["root"]
   },
   {
     "id": "fullstack-applications",
@@ -303,7 +231,7 @@
       "en_text": "Full Stack Applications"
     },
     "prerequisites": ["web-development", "databases"],
-    "parents": ["fullstack-track"]
+    "parents": ["root"]
   },
   {
     "id": "fintech-track",
@@ -312,7 +240,7 @@
       "en_text": "Fintech Track"
     },
     "prerequisites": ["databases", "algorithms"],
-    "parents": ["specializations"]
+    "parents": ["root"]
   },
   {
     "id": "fintech-fundamentals",
@@ -331,23 +259,5 @@
     },
     "prerequisites": ["fintech-fundamentals", "algorithms"],
     "parents": ["fintech-track"]
-  },
-  {
-    "id": "capstone",
-    "title": {
-      "he_text": "פרויקט גמר",
-      "en_text": "Capstone Project"
-    },
-    "prerequisites": [],
-    "parents": ["root"]
-  },
-  {
-    "id": "thesis",
-    "title": {
-      "he_text": "עבודת גמר",
-      "en_text": "Thesis"
-    },
-    "prerequisites": ["capstone"],
-    "parents": ["capstone"]
   }
 ]
