@@ -1,391 +1,380 @@
-{
-  "$schema": "https://lumina.study/schemas/lumina-v0.3.json",
-  "version": "0.3",
-  "institution": {
-    "name": {
-      "he_text": "המכללה למנהל - מדעי המחשב",
-      "en_text": "Colman College - Computer Science"
+[
+  {
+    "id": "root",
+    "title": {
+      "he_text": "תואר ראשון במדעי המחשב",
+      "en_text": "B.Sc in Computer Science"
     },
-    "url": "https://www.colman.ac.il/academics/ba/computer-science/"
+    "prerequisites": [],
+    "parents": []
   },
-  "blocks": [
-    {
-      "id": "root",
-      "title": {
-        "he_text": "תואר ראשון במדעי המחשב",
-        "en_text": "B.Sc in Computer Science"
-      },
-      "prerequisites": [],
-      "parents": []
+  {
+    "id": "year-1",
+    "title": {
+      "he_text": "שנה א'",
+      "en_text": "Year 1"
     },
-    {
-      "id": "year-1",
-      "title": {
-        "he_text": "שנה א'",
-        "en_text": "Year 1"
-      },
-      "prerequisites": [],
-      "parents": ["root"]
+    "prerequisites": [],
+    "parents": ["root"]
+  },
+  {
+    "id": "year-2",
+    "title": {
+      "he_text": "שנה ב'",
+      "en_text": "Year 2"
     },
-    {
-      "id": "year-2",
-      "title": {
-        "he_text": "שנה ב'",
-        "en_text": "Year 2"
-      },
-      "prerequisites": ["year-1"],
-      "parents": ["root"]
+    "prerequisites": ["year-1"],
+    "parents": ["root"]
+  },
+  {
+    "id": "year-3",
+    "title": {
+      "he_text": "שנה ג'",
+      "en_text": "Year 3"
     },
-    {
-      "id": "year-3",
-      "title": {
-        "he_text": "שנה ג'",
-        "en_text": "Year 3"
-      },
-      "prerequisites": ["year-2"],
-      "parents": ["root"]
+    "prerequisites": ["year-2"],
+    "parents": ["root"]
+  },
+  {
+    "id": "math-foundation",
+    "title": {
+      "he_text": "יסודות מתמטיקה",
+      "en_text": "Mathematics Foundation"
     },
-    {
-      "id": "math-foundation",
-      "title": {
-        "he_text": "יסודות מתמטיקה",
-        "en_text": "Mathematics Foundation"
-      },
-      "prerequisites": [],
-      "parents": ["year-1"]
+    "prerequisites": [],
+    "parents": ["year-1"]
+  },
+  {
+    "id": "cs-foundation",
+    "title": {
+      "he_text": "יסודות מדעי המחשב",
+      "en_text": "Computer Science Foundation"
     },
-    {
-      "id": "cs-foundation",
-      "title": {
-        "he_text": "יסודות מדעי המחשב",
-        "en_text": "Computer Science Foundation"
-      },
-      "prerequisites": [],
-      "parents": ["year-1"]
+    "prerequisites": [],
+    "parents": ["year-1"]
+  },
+  {
+    "id": "linear-algebra-1",
+    "title": {
+      "he_text": "אלגברה לינארית 1",
+      "en_text": "Linear Algebra I"
     },
-    {
-      "id": "linear-algebra-1",
-      "title": {
-        "he_text": "אלגברה לינארית 1",
-        "en_text": "Linear Algebra I"
-      },
-      "prerequisites": [],
-      "parents": ["math-foundation"]
+    "prerequisites": [],
+    "parents": ["math-foundation"]
+  },
+  {
+    "id": "linear-algebra-2",
+    "title": {
+      "he_text": "אלגברה לינארית 2",
+      "en_text": "Linear Algebra II"
     },
-    {
-      "id": "linear-algebra-2",
-      "title": {
-        "he_text": "אלגברה לינארית 2",
-        "en_text": "Linear Algebra II"
-      },
-      "prerequisites": ["linear-algebra-1"],
-      "parents": ["math-foundation"]
+    "prerequisites": ["linear-algebra-1"],
+    "parents": ["math-foundation"]
+  },
+  {
+    "id": "calculus-1",
+    "title": {
+      "he_text": "חשבון אינפיניטסימלי 1",
+      "en_text": "Calculus I"
     },
-    {
-      "id": "calculus-1",
-      "title": {
-        "he_text": "חשבון אינפיניטסימלי 1",
-        "en_text": "Calculus I"
-      },
-      "prerequisites": [],
-      "parents": ["math-foundation"]
+    "prerequisites": [],
+    "parents": ["math-foundation"]
+  },
+  {
+    "id": "calculus-2",
+    "title": {
+      "he_text": "חשבון אינפיניטסימלי 2",
+      "en_text": "Calculus II"
     },
-    {
-      "id": "calculus-2",
-      "title": {
-        "he_text": "חשבון אינפיניטסימלי 2",
-        "en_text": "Calculus II"
-      },
-      "prerequisites": ["calculus-1"],
-      "parents": ["math-foundation"]
+    "prerequisites": ["calculus-1"],
+    "parents": ["math-foundation"]
+  },
+  {
+    "id": "discrete-math-1",
+    "title": {
+      "he_text": "מתמטיקה בדידה 1",
+      "en_text": "Discrete Mathematics I"
     },
-    {
-      "id": "discrete-math-1",
-      "title": {
-        "he_text": "מתמטיקה בדידה 1",
-        "en_text": "Discrete Mathematics I"
-      },
-      "prerequisites": [],
-      "parents": ["math-foundation"]
+    "prerequisites": [],
+    "parents": ["math-foundation"]
+  },
+  {
+    "id": "discrete-math-2",
+    "title": {
+      "he_text": "מתמטיקה בדידה 2",
+      "en_text": "Discrete Mathematics II"
     },
-    {
-      "id": "discrete-math-2",
-      "title": {
-        "he_text": "מתמטיקה בדידה 2",
-        "en_text": "Discrete Mathematics II"
-      },
-      "prerequisites": ["discrete-math-1"],
-      "parents": ["math-foundation"]
+    "prerequisites": ["discrete-math-1"],
+    "parents": ["math-foundation"]
+  },
+  {
+    "id": "intro-cs",
+    "title": {
+      "he_text": "מבוא למדעי המחשב",
+      "en_text": "Introduction to Computer Science"
     },
-    {
-      "id": "intro-cs",
-      "title": {
-        "he_text": "מבוא למדעי המחשב",
-        "en_text": "Introduction to Computer Science"
-      },
-      "prerequisites": [],
-      "parents": ["cs-foundation"]
+    "prerequisites": [],
+    "parents": ["cs-foundation"]
+  },
+  {
+    "id": "oop",
+    "title": {
+      "he_text": "תכנות מונחה עצמים",
+      "en_text": "Object-Oriented Programming"
     },
-    {
-      "id": "oop",
-      "title": {
-        "he_text": "תכנות מונחה עצמים",
-        "en_text": "Object-Oriented Programming"
-      },
-      "prerequisites": ["intro-cs"],
-      "parents": ["cs-foundation"]
+    "prerequisites": ["intro-cs"],
+    "parents": ["cs-foundation"]
+  },
+  {
+    "id": "data-structures",
+    "title": {
+      "he_text": "מבני נתונים",
+      "en_text": "Data Structures"
     },
-    {
-      "id": "data-structures",
-      "title": {
-        "he_text": "מבני נתונים",
-        "en_text": "Data Structures"
-      },
-      "prerequisites": ["intro-cs", "discrete-math-1"],
-      "parents": ["cs-foundation"]
+    "prerequisites": ["intro-cs", "discrete-math-1"],
+    "parents": ["cs-foundation"]
+  },
+  {
+    "id": "core-courses",
+    "title": {
+      "he_text": "קורסי ליבה",
+      "en_text": "Core Courses"
     },
-    {
-      "id": "core-courses",
-      "title": {
-        "he_text": "קורסי ליבה",
-        "en_text": "Core Courses"
-      },
-      "prerequisites": ["year-1"],
-      "parents": ["year-2"]
+    "prerequisites": ["year-1"],
+    "parents": ["year-2"]
+  },
+  {
+    "id": "algorithms",
+    "title": {
+      "he_text": "אלגוריתמים",
+      "en_text": "Algorithms"
     },
-    {
-      "id": "algorithms",
-      "title": {
-        "he_text": "אלגוריתמים",
-        "en_text": "Algorithms"
-      },
-      "prerequisites": ["data-structures", "discrete-math-2"],
-      "parents": ["core-courses"]
+    "prerequisites": ["data-structures", "discrete-math-2"],
+    "parents": ["core-courses"]
+  },
+  {
+    "id": "computer-architecture",
+    "title": {
+      "he_text": "ארכיטקטורת מחשבים",
+      "en_text": "Computer Architecture"
     },
-    {
-      "id": "computer-architecture",
-      "title": {
-        "he_text": "ארכיטקטורת מחשבים",
-        "en_text": "Computer Architecture"
-      },
-      "prerequisites": ["intro-cs"],
-      "parents": ["core-courses"]
+    "prerequisites": ["intro-cs"],
+    "parents": ["core-courses"]
+  },
+  {
+    "id": "operating-systems",
+    "title": {
+      "he_text": "מערכות הפעלה",
+      "en_text": "Operating Systems"
     },
-    {
-      "id": "operating-systems",
-      "title": {
-        "he_text": "מערכות הפעלה",
-        "en_text": "Operating Systems"
-      },
-      "prerequisites": ["computer-architecture", "data-structures"],
-      "parents": ["core-courses"]
+    "prerequisites": ["computer-architecture", "data-structures"],
+    "parents": ["core-courses"]
+  },
+  {
+    "id": "computer-networks",
+    "title": {
+      "he_text": "תקשורת מחשבים",
+      "en_text": "Computer Networks"
     },
-    {
-      "id": "computer-networks",
-      "title": {
-        "he_text": "תקשורת מחשבים",
-        "en_text": "Computer Networks"
-      },
-      "prerequisites": ["operating-systems"],
-      "parents": ["core-courses"]
+    "prerequisites": ["operating-systems"],
+    "parents": ["core-courses"]
+  },
+  {
+    "id": "databases",
+    "title": {
+      "he_text": "מסדי נתונים",
+      "en_text": "Database Systems"
     },
-    {
-      "id": "databases",
-      "title": {
-        "he_text": "מסדי נתונים",
-        "en_text": "Database Systems"
-      },
-      "prerequisites": ["data-structures"],
-      "parents": ["core-courses"]
+    "prerequisites": ["data-structures"],
+    "parents": ["core-courses"]
+  },
+  {
+    "id": "theory-courses",
+    "title": {
+      "he_text": "קורסי תיאוריה",
+      "en_text": "Theory Courses"
     },
-    {
-      "id": "theory-courses",
-      "title": {
-        "he_text": "קורסי תיאוריה",
-        "en_text": "Theory Courses"
-      },
-      "prerequisites": ["year-1"],
-      "parents": ["year-2"]
+    "prerequisites": ["year-1"],
+    "parents": ["year-2"]
+  },
+  {
+    "id": "computational-models",
+    "title": {
+      "he_text": "מודלים חישוביים וסיבוכיות",
+      "en_text": "Computational Models and Complexity"
     },
-    {
-      "id": "computational-models",
-      "title": {
-        "he_text": "מודלים חישוביים וסיבוכיות",
-        "en_text": "Computational Models and Complexity"
-      },
-      "prerequisites": ["algorithms", "discrete-math-2"],
-      "parents": ["theory-courses"]
+    "prerequisites": ["algorithms", "discrete-math-2"],
+    "parents": ["theory-courses"]
+  },
+  {
+    "id": "specializations",
+    "title": {
+      "he_text": "התמחויות",
+      "en_text": "Specialization Tracks"
     },
-    {
-      "id": "specializations",
-      "title": {
-        "he_text": "התמחויות",
-        "en_text": "Specialization Tracks"
-      },
-      "prerequisites": ["year-2"],
-      "parents": ["year-3"]
+    "prerequisites": ["year-2"],
+    "parents": ["year-3"]
+  },
+  {
+    "id": "data-science-track",
+    "title": {
+      "he_text": "מסלול מדעי הנתונים",
+      "en_text": "Data Science Track"
     },
-    {
-      "id": "data-science-track",
-      "title": {
-        "he_text": "מסלול מדעי הנתונים",
-        "en_text": "Data Science Track"
-      },
-      "prerequisites": ["algorithms", "linear-algebra-2", "calculus-2"],
-      "parents": ["specializations"]
+    "prerequisites": ["algorithms", "linear-algebra-2", "calculus-2"],
+    "parents": ["specializations"]
+  },
+  {
+    "id": "ml-data-mining",
+    "title": {
+      "he_text": "למידת מכונה וכריית מידע",
+      "en_text": "Machine Learning and Data Mining"
     },
-    {
-      "id": "ml-data-mining",
-      "title": {
-        "he_text": "למידת מכונה וכריית מידע",
-        "en_text": "Machine Learning and Data Mining"
-      },
-      "prerequisites": ["linear-algebra-2", "calculus-2", "algorithms"],
-      "parents": ["data-science-track"]
+    "prerequisites": ["linear-algebra-2", "calculus-2", "algorithms"],
+    "parents": ["data-science-track"]
+  },
+  {
+    "id": "data-science-fundamentals",
+    "title": {
+      "he_text": "יסודות מדעי הנתונים",
+      "en_text": "Data Science Fundamentals"
     },
-    {
-      "id": "data-science-fundamentals",
-      "title": {
-        "he_text": "יסודות מדעי הנתונים",
-        "en_text": "Data Science Fundamentals"
-      },
-      "prerequisites": ["databases", "ml-data-mining"],
-      "parents": ["data-science-track"]
+    "prerequisites": ["databases", "ml-data-mining"],
+    "parents": ["data-science-track"]
+  },
+  {
+    "id": "big-data",
+    "title": {
+      "he_text": "ביג דאטא",
+      "en_text": "Big Data"
     },
-    {
-      "id": "big-data",
-      "title": {
-        "he_text": "ביג דאטא",
-        "en_text": "Big Data"
-      },
-      "prerequisites": ["data-science-fundamentals"],
-      "parents": ["data-science-track"]
+    "prerequisites": ["data-science-fundamentals"],
+    "parents": ["data-science-track"]
+  },
+  {
+    "id": "cybersecurity-track",
+    "title": {
+      "he_text": "מסלול אבטחת מידע",
+      "en_text": "Cybersecurity Track"
     },
-    {
-      "id": "cybersecurity-track",
-      "title": {
-        "he_text": "מסלול אבטחת מידע",
-        "en_text": "Cybersecurity Track"
-      },
-      "prerequisites": ["operating-systems", "computer-networks"],
-      "parents": ["specializations"]
+    "prerequisites": ["operating-systems", "computer-networks"],
+    "parents": ["specializations"]
+  },
+  {
+    "id": "cybersecurity-basics",
+    "title": {
+      "he_text": "יסודות אבטחת מידע",
+      "en_text": "Cybersecurity Basics"
     },
-    {
-      "id": "cybersecurity-basics",
-      "title": {
-        "he_text": "יסודות אבטחת מידע",
-        "en_text": "Cybersecurity Basics"
-      },
-      "prerequisites": ["operating-systems", "computer-networks"],
-      "parents": ["cybersecurity-track"]
+    "prerequisites": ["operating-systems", "computer-networks"],
+    "parents": ["cybersecurity-track"]
+  },
+  {
+    "id": "penetration-testing",
+    "title": {
+      "he_text": "בדיקות חדירה",
+      "en_text": "Penetration Testing"
     },
-    {
-      "id": "penetration-testing",
-      "title": {
-        "he_text": "בדיקות חדירה",
-        "en_text": "Penetration Testing"
-      },
-      "prerequisites": ["cybersecurity-basics"],
-      "parents": ["cybersecurity-track"]
+    "prerequisites": ["cybersecurity-basics"],
+    "parents": ["cybersecurity-track"]
+  },
+  {
+    "id": "deep-learning-track",
+    "title": {
+      "he_text": "מסלול למידה עמוקה",
+      "en_text": "Deep Learning Track"
     },
-    {
-      "id": "deep-learning-track",
-      "title": {
-        "he_text": "מסלול למידה עמוקה",
-        "en_text": "Deep Learning Track"
-      },
-      "prerequisites": ["ml-data-mining"],
-      "parents": ["specializations"]
+    "prerequisites": ["ml-data-mining"],
+    "parents": ["specializations"]
+  },
+  {
+    "id": "neural-networks",
+    "title": {
+      "he_text": "רשתות נוירונים",
+      "en_text": "Neural Networks"
     },
-    {
-      "id": "neural-networks",
-      "title": {
-        "he_text": "רשתות נוירונים",
-        "en_text": "Neural Networks"
-      },
-      "prerequisites": ["ml-data-mining"],
-      "parents": ["deep-learning-track"]
+    "prerequisites": ["ml-data-mining"],
+    "parents": ["deep-learning-track"]
+  },
+  {
+    "id": "computer-vision",
+    "title": {
+      "he_text": "ראייה ממוחשבת",
+      "en_text": "Computer Vision"
     },
-    {
-      "id": "computer-vision",
-      "title": {
-        "he_text": "ראייה ממוחשבת",
-        "en_text": "Computer Vision"
-      },
-      "prerequisites": ["neural-networks"],
-      "parents": ["deep-learning-track"]
+    "prerequisites": ["neural-networks"],
+    "parents": ["deep-learning-track"]
+  },
+  {
+    "id": "fullstack-track",
+    "title": {
+      "he_text": "מסלול פיתוח Full Stack",
+      "en_text": "Full Stack Development Track"
     },
-    {
-      "id": "fullstack-track",
-      "title": {
-        "he_text": "מסלול פיתוח Full Stack",
-        "en_text": "Full Stack Development Track"
-      },
-      "prerequisites": ["oop", "databases"],
-      "parents": ["specializations"]
+    "prerequisites": ["oop", "databases"],
+    "parents": ["specializations"]
+  },
+  {
+    "id": "web-development",
+    "title": {
+      "he_text": "פיתוח אתרים",
+      "en_text": "Web Development"
     },
-    {
-      "id": "web-development",
-      "title": {
-        "he_text": "פיתוח אתרים",
-        "en_text": "Web Development"
-      },
-      "prerequisites": ["oop"],
-      "parents": ["fullstack-track"]
+    "prerequisites": ["oop"],
+    "parents": ["fullstack-track"]
+  },
+  {
+    "id": "fullstack-applications",
+    "title": {
+      "he_text": "פיתוח אפליקציות Full Stack",
+      "en_text": "Full Stack Applications"
     },
-    {
-      "id": "fullstack-applications",
-      "title": {
-        "he_text": "פיתוח אפליקציות Full Stack",
-        "en_text": "Full Stack Applications"
-      },
-      "prerequisites": ["web-development", "databases"],
-      "parents": ["fullstack-track"]
+    "prerequisites": ["web-development", "databases"],
+    "parents": ["fullstack-track"]
+  },
+  {
+    "id": "fintech-track",
+    "title": {
+      "he_text": "מסלול פינטק",
+      "en_text": "Fintech Track"
     },
-    {
-      "id": "fintech-track",
-      "title": {
-        "he_text": "מסלול פינטק",
-        "en_text": "Fintech Track"
-      },
-      "prerequisites": ["databases", "algorithms"],
-      "parents": ["specializations"]
+    "prerequisites": ["databases", "algorithms"],
+    "parents": ["specializations"]
+  },
+  {
+    "id": "fintech-fundamentals",
+    "title": {
+      "he_text": "יסודות פינטק",
+      "en_text": "Fintech Fundamentals"
     },
-    {
-      "id": "fintech-fundamentals",
-      "title": {
-        "he_text": "יסודות פינטק",
-        "en_text": "Fintech Fundamentals"
-      },
-      "prerequisites": ["databases"],
-      "parents": ["fintech-track"]
+    "prerequisites": ["databases"],
+    "parents": ["fintech-track"]
+  },
+  {
+    "id": "financial-algorithms",
+    "title": {
+      "he_text": "אלגוריתמים פיננסיים",
+      "en_text": "Financial Algorithms"
     },
-    {
-      "id": "financial-algorithms",
-      "title": {
-        "he_text": "אלגוריתמים פיננסיים",
-        "en_text": "Financial Algorithms"
-      },
-      "prerequisites": ["fintech-fundamentals", "algorithms"],
-      "parents": ["fintech-track"]
+    "prerequisites": ["fintech-fundamentals", "algorithms"],
+    "parents": ["fintech-track"]
+  },
+  {
+    "id": "capstone",
+    "title": {
+      "he_text": "פרויקט גמר",
+      "en_text": "Capstone Project"
     },
-    {
-      "id": "capstone",
-      "title": {
-        "he_text": "פרויקט גמר",
-        "en_text": "Capstone Project"
-      },
-      "prerequisites": ["year-2"],
-      "parents": ["year-3"]
+    "prerequisites": ["year-2"],
+    "parents": ["year-3"]
+  },
+  {
+    "id": "thesis",
+    "title": {
+      "he_text": "עבודת גמר",
+      "en_text": "Thesis"
     },
-    {
-      "id": "thesis",
-      "title": {
-        "he_text": "עבודת גמר",
-        "en_text": "Thesis"
-      },
-      "prerequisites": ["capstone"],
-      "parents": ["capstone"]
-    }
-  ]
-}
+    "prerequisites": ["capstone"],
+    "parents": ["capstone"]
+  }
+]
