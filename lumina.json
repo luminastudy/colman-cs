@@ -9,40 +9,13 @@
     "parents": []
   },
   {
-    "id": "year-1",
-    "title": {
-      "he_text": "שנה א'",
-      "en_text": "Year 1"
-    },
-    "prerequisites": [],
-    "parents": ["root"]
-  },
-  {
-    "id": "year-2",
-    "title": {
-      "he_text": "שנה ב'",
-      "en_text": "Year 2"
-    },
-    "prerequisites": ["year-1"],
-    "parents": ["root"]
-  },
-  {
-    "id": "year-3",
-    "title": {
-      "he_text": "שנה ג'",
-      "en_text": "Year 3"
-    },
-    "prerequisites": ["year-2"],
-    "parents": ["root"]
-  },
-  {
     "id": "math-foundation",
     "title": {
       "he_text": "יסודות מתמטיקה",
       "en_text": "Mathematics Foundation"
     },
     "prerequisites": [],
-    "parents": ["year-1"]
+    "parents": ["root"]
   },
   {
     "id": "cs-foundation",
@@ -51,7 +24,7 @@
       "en_text": "Computer Science Foundation"
     },
     "prerequisites": [],
-    "parents": ["year-1"]
+    "parents": ["root"]
   },
   {
     "id": "linear-algebra-1",
@@ -140,8 +113,8 @@
       "he_text": "קורסי ליבה",
       "en_text": "Core Courses"
     },
-    "prerequisites": ["year-1"],
-    "parents": ["year-2"]
+    "prerequisites": [],
+    "parents": ["root"]
   },
   {
     "id": "algorithms",
@@ -194,8 +167,8 @@
       "he_text": "קורסי תיאוריה",
       "en_text": "Theory Courses"
     },
-    "prerequisites": ["year-1"],
-    "parents": ["year-2"]
+    "prerequisites": [],
+    "parents": ["root"]
   },
   {
     "id": "computational-models",
@@ -212,8 +185,8 @@
       "he_text": "התמחויות",
       "en_text": "Specialization Tracks"
     },
-    "prerequisites": ["year-2"],
-    "parents": ["year-3"]
+    "prerequisites": [],
+    "parents": ["root"]
   },
   {
     "id": "data-science-track",
@@ -365,8 +338,8 @@
       "he_text": "פרויקט גמר",
       "en_text": "Capstone Project"
     },
-    "prerequisites": ["year-2"],
-    "parents": ["year-3"]
+    "prerequisites": [],
+    "parents": ["root"]
   },
   {
     "id": "thesis",
